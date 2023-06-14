@@ -8,9 +8,11 @@ import { Apple } from '../apple.model';
 })
 export class AppleBasketComponent {
   appleList: Apple[] = [];
+  counter: number = 0;
 
   addApple(): void {
-    const newApple: Apple = { id: this.appleList.length + 1 };
+    this.counter++;
+    const newApple: Apple = { id: this.counter };
     this.appleList.push(newApple);
 
     console.log(newApple);
