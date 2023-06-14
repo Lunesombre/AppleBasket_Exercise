@@ -1,0 +1,10 @@
+<button type="button" (click)="addApple()">Add an apple</button>
+<p>To eat an apple, just click on it, it will make it disappear from this basket.</p>
+<hr>
+<table>
+    <tr class="basket">
+        <td *ngFor="let item of appleList; let i = index;">
+            <app-apple [apple]="item" (remove)="removeApple(item)"></app-apple>
+        </td>
+    </tr>
+</table>
