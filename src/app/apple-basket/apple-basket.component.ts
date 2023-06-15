@@ -24,4 +24,7 @@ export class AppleBasketComponent {
       this.appleList.splice(index, 1);
     }
   }
+  playAudio(x:HTMLAudioElement){
+    x.play()
+  }
 }

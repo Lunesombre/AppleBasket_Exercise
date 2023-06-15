@@ -1,2 +1,3 @@
 
-<img src="../../assets/img/pomme-gala.png" title="Pomme n°{{apple.id}}" alt="Image d'une pomme Royal Gala de toute beauté, portant le n°{{apple.id}}" (click)="removeThatApple(apple)">
+<img src="../../assets/img/pomme{{randomKeyNumber}}.png" title="Pomme n°{{apple.id}}" alt="Image d'une pomme de toute beauté, n°{{apple.id}}" (click)="play(appleEaten); removeThatApple(apple) ">
+<audio #appleEaten src="../../assets/sounds/apple_short.m4a" type="audio/x-m4a"></audio>

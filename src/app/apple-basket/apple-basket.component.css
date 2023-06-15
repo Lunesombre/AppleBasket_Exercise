@@ -1,13 +1,47 @@
-td {
-    border: solid 1px black;
-    padding: 5px;
-}
-
-img {
-    width: 200px;
-}
-
 .basket {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width:100vw;
+}
+
+td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    border-radius: 150px;
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 20px black;
+    margin: 10px;
+    transition : 0.5s;
+}
+
+td:hover{
+    background-color: rgb(37, 99, 99);
+    transition : 0.5s;
+}
+
+.container{
+    padding-top: 15px;
+    text-align: center;
+    background-color: rgb(38, 38, 38);
+    color:rgb(209, 209, 209);
+    min-height: 100vh;
+}
+
+button{
+    padding: 10px;
+    font-size: 1em;
+    border:none;
+    border-radius: 15px;
+    background-color: yellow;
+}
+button:hover{
+box-shadow: 0 0 15px yellow;
+}
+
+p{
+    font-size: 1.3em;
 }
